@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Partizan Galați | Acasă</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/Partizan Galati Logo.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/images/Partizan Galati Logo.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/Partizan Galati Logo.png" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWix+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkR4j8Yd2KQxQWGWp1V7u8a9gB+7U7l+7W3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <!-- Header + Navigatie comuna -->
+    <header class="bg-partizan-black text-white sticky top-0 z-50">
+      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex min-h-[110px] items-center justify-between py-2">
+          <a href="index.html" class="flex items-center gap-3">
+            <img
+              src="assets/images/Partizan Galati Logo.png"
+              alt="Logo Partizan Galați"
+              class="h-[75px] w-auto max-w-[90px] object-contain"
+            />
+            <span class="font-bold tracking-wide">Partizan Galați</span>
+          </a>
+
+          <div class="hidden md:flex items-center gap-6">
+            <a class="nav-link hover:text-partizan-blue transition" href="index.html">Acasă</a>
+            <a class="nav-link hover:text-partizan-blue transition" href="despre.html">Despre</a>
+            <a class="nav-link hover:text-partizan-blue transition" href="lot.html">Lot</a>
+            <a class="nav-link hover:text-partizan-blue transition" href="meciuri.html">Meciuri</a>
+            <a class="nav-link hover:text-partizan-blue transition" href="galerie.html">Galerie</a>
+            <a class="nav-link hover:text-partizan-blue transition" href="contact.html">Contact</a>
+          </div>
+
+          <button
+            id="mobile-menu-button"
+            class="md:hidden inline-flex flex-col items-center justify-center gap-1.5 rounded-md p-2.5 text-white hover:bg-partizan-blue transition hamburger-btn"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+            aria-label="Deschide meniul"
+          >
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </nav>
+
+      <div id="mobile-menu" class="hidden md:hidden border-t border-partizan-gray">
+        <div class="px-4 py-3 space-y-2">
+          <a class="nav-link block hover:text-partizan-blue transition" href="index.html">Acasă</a>
+          <a class="nav-link block hover:text-partizan-blue transition" href="despre.html">Despre</a>
+          <a class="nav-link block hover:text-partizan-blue transition" href="lot.html">Lot</a>
+          <a class="nav-link block hover:text-partizan-blue transition" href="meciuri.html">Meciuri</a>
+          <a class="nav-link block hover:text-partizan-blue transition" href="galerie.html">Galerie</a>
+          <a class="nav-link block hover:text-partizan-blue transition" href="contact.html">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-1">
+      <!-- Hero -->
+      <section class="hero-bg text-white py-24 md:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4">Partizan Galați</h1>
+          <p class="text-lg md:text-2xl text-gray-200 mb-8">Nu doar  un club, <br>O adevarata familie</p>
+          <a
+            href="lot.html"
+            class="btn-primary inline-block px-8 py-3 rounded-lg font-semibold"
+            >Vezi Lotul</a
+          >
+        </div>
+      </section>
+
+      <!-- Rezumat Despre -->
+      <section class="py-14 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl font-bold mb-4">Despre echipă</h2>
+          <p class="text-slate-700 max-w-3xl mb-6">
+            Partizan Galați este o echipă de minifotbal construită pe disciplină, pasiune și spirit
+            de luptă. Obiectivul nostru este performanța constantă și promovarea valorilor sportive
+            în comunitatea locală.
+          </p>
+          <a href="despre.html" class="text-partizan-blue font-semibold hover:text-partizan-red transition"
+            >Află mai multe despre noi <i class="fa-solid fa-arrow-right ml-1"></i
+          ></a>
+        </div>
+      </section>
+
+      <!-- Preview lot -->
+      <section class="py-14 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between gap-4 mb-8">
+            <h2 class="text-3xl font-bold">Previzualizare lot</h2>
+            <a href="lot.html" class="text-partizan-blue font-semibold hover:text-partizan-red transition"
+              >Vezi tot lotul</a
+            >
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <article class="card-soft rounded-xl bg-white p-5 text-center">
+              <img
+                src="assets/images/poza jucator unknow.jpg"
+                alt="Bîzgan Cosmin"
+                class="w-24 h-24 rounded-full mx-auto mb-3 object-cover"
+              />
+              <h3 class="font-bold">Bîzgan Cosmin</h3>
+              <p class="text-slate-600">Portar</p>
+            </article>
+
+            <article class="card-soft rounded-xl bg-white p-5 text-center">
+              <img
+                src="assets/images/poza jucator unknow.jpg"
+                alt="Focșa Ciprian"
+                class="w-24 h-24 rounded-full mx-auto mb-3 object-cover"
+              />
+              <h3 class="font-bold">Focșa Ciprian (C)</h3>
+              <p class="text-slate-600">Fundaș</p>
+            </article>
+
+            <article class="card-soft rounded-xl bg-white p-5 text-center">
+              <img
+                src="assets/images/poza jucator unknow.jpg"
+                alt="Florea Cosmin"
+                class="w-24 h-24 rounded-full mx-auto mb-3 object-cover"
+              />
+              <h3 class="font-bold">Florea Cosmin</h3>
+              <p class="text-slate-600">Mijlocaș</p>
+            </article>
+
+            <article class="card-soft rounded-xl bg-white p-5 text-center">
+              <img
+                src="assets/images/poza jucator unknow.jpg"
+                alt="Oniciu Valentin"
+                class="w-24 h-24 rounded-full mx-auto mb-3 object-cover"
+              />
+              <h3 class="font-bold">Oniciu Valentin</h3>
+              <p class="text-slate-600">Atacant</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact rapid -->
+      <section class="py-14 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl font-bold mb-6">Contact rapid</h2>
+          <div class="grid sm:grid-cols-3 gap-6">
+            <div class="card-soft rounded-xl bg-white p-5">
+              <h3 class="font-semibold mb-2 text-partizan-blue">Email</h3>
+              <p>contact@partizangalati.ro</p>
+            </div>
+            <div class="card-soft rounded-xl bg-white p-5">
+              <h3 class="font-semibold mb-2 text-partizan-blue">Telefon</h3>
+              <p>+40 740 000 000</p>
+            </div>
+            <div class="card-soft rounded-xl bg-white p-5">
+              <h3 class="font-semibold mb-2 text-partizan-blue">Adresă</h3>
+              <p>Str. Stadionului nr. 10, Galați</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sponsori -->
+      <section class="py-14 bg-slate-100 border-t border-partizan-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl font-bold mb-2">Sponsori & parteneri</h2>
+          <p class="text-slate-600 mb-10 max-w-2xl">
+            Mulțumim partenerilor noștri pentru sprijinul acordat echipei Partizan Galați.
+          </p>
+          <div class="flex flex-wrap justify-center items-center">
+            <a href="https://reumadiagnostic.ro/" target="_blank" rel="noopener noreferrer" class="sponsor-card flex items-center justify-center p-8 rounded-xl bg-white card-soft hover:border-partizan-blue transition border-2 border-transparent" aria-label="ReumaDiagnostic – sponsor">
+              <img src="assets/sponsori/reumadiagnostic long.png" alt="ReumaDiagnostic" class="max-h-20 w-auto max-w-[280px] object-contain" />
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer dezvoltat: linkuri, contact, social media -->
+    <footer class="bg-partizan-black text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
+          <!-- Brand + slogan -->
+          <div class="lg:col-span-1">
+            <a href="index.html" class="flex items-center gap-3 mb-4">
+              <img src="assets/images/Partizan Galati Logo.png" alt="Logo Partizan Galați" class="h-12 w-auto max-w-[120px] object-contain" />
+              <span class="font-bold text-lg">Partizan Galați</span>
+            </a>
+            <p class="text-[#A7A9AC] text-sm leading-relaxed">
+              Nu doar un club,<br>O adevarata familie.
+            </p>
+          </div>
+
+          <!-- Linkuri rapide -->
+          <div>
+            <h3 class="font-semibold text-white mb-4 text-sm uppercase tracking-wider">Navigare</h3>
+            <ul class="space-y-2 text-sm">
+              <li><a href="index.html" class="text-[#A7A9AC] hover:text-white transition">Acasă</a></li>
+              <li><a href="despre.html" class="text-[#A7A9AC] hover:text-white transition">Despre</a></li>
+              <li><a href="lot.html" class="text-[#A7A9AC] hover:text-white transition">Lot</a></li>
+              <li><a href="meciuri.html" class="text-[#A7A9AC] hover:text-white transition">Meciuri</a></li>
+              <li><a href="galerie.html" class="text-[#A7A9AC] hover:text-white transition">Galerie</a></li>
+              <li><a href="contact.html" class="text-[#A7A9AC] hover:text-white transition">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div>
+            <h3 class="font-semibold text-white mb-4 text-sm uppercase tracking-wider">Contact</h3>
+            <ul class="space-y-3 text-sm text-[#A7A9AC]">
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-envelope mt-0.5 text-[#1D71B8] shrink-0"></i>
+                <a href="mailto:contact@partizangalati.ro" class="hover:text-white transition">contact@partizangalati.ro</a>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-phone mt-0.5 text-[#1D71B8] shrink-0"></i>
+                <a href="tel:+40740000000" class="hover:text-white transition">+40 740 000 000</a>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-location-dot mt-0.5 text-[#1D71B8] shrink-0"></i>
+                <span>Str. Stadionului nr. 10, Galați</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social media -->
+          <div>
+            <h3 class="font-semibold text-white mb-4 text-sm uppercase tracking-wider">Urmărește-ne</h3>
+            <p class="text-[#A7A9AC] text-sm mb-4">Fii la curent cu meciuri, știri și momente din culise.</p>
+            <div class="flex gap-3">
+              <a href="https://www.facebook.com/people/Partizan-GL/100082318315673/" target="_blank" rel="noopener noreferrer" class="footer-social w-10 h-10 rounded-full bg-[#1D71B8] hover:bg-[#E31E24] flex items-center justify-center transition" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t border-[#A7A9AC]/30 mt-10 pt-6 flex flex-col items-center gap-4 text-sm text-[#A7A9AC]">
+          <div class="flex flex-col sm:flex-row justify-between items-center gap-4 w-full">
+            <p>&copy; 2026 Partizan Galați. Toate drepturile rezervate.</p>
+            <p>Echipă de minifotbal • Galați, România</p>
+          </div>
+          <div class="flex items-center gap-2 pt-2 border-t border-[#A7A9AC]/20 w-full justify-center">
+            <span class="text-[#A7A9AC]">Sponsor:</span>
+            <a href="https://reumadiagnostic.ro/" target="_blank" rel="noopener noreferrer" class="inline-block" aria-label="ReumaDiagnostic">
+              <img src="assets/sponsori/reumadiagnostic short.png" alt="ReumaDiagnostic" class="h-8 w-auto max-w-[100px] object-contain opacity-90 hover:opacity-100 transition" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

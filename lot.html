@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Partizan Galați | Lot</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/Partizan Galati Logo.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/images/Partizan Galati Logo.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/Partizan Galati Logo.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWix+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkR4j8Yd2KQxQWGWp1V7u8a9gB+7U7l+7W3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <header class="bg-partizan-black text-white sticky top-0 z-50">
+      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex min-h-[110px] items-center justify-between py-2">
+          <a href="index.html" class="flex items-center gap-3">
+            <img src="assets/images/Partizan Galati Logo.png" alt="Logo Partizan Galați" class="h-[75px] w-auto max-w-[90px] object-contain" />
+            <span class="font-bold tracking-wide">Partizan Galați</span>
+          </a>
+          <div class="hidden md:flex items-center gap-6">
+            <a class="nav-link hover:text-partizan-blue transition" href="index.html">Acasă</a>
+            <a class="nav-link hover:text-partizan-blue transition" href="despre.html">Despre</a>
+            <a class="nav-link hover:text-partizan-blue transition" href="lot.html">Lot</a>
+            <a class="nav-link hover:text-partizan-blue transition" href="meciuri.html">Meciuri</a>
+            <a class="nav-link hover:text-partizan-blue transition" href="galerie.html">Galerie</a>
+            <a class="nav-link hover:text-partizan-blue transition" href="contact.html">Contact</a>
+          </div>
+          <button id="mobile-menu-button" class="md:hidden inline-flex flex-col items-center justify-center gap-1.5 rounded-md p-2.5 text-white hover:bg-partizan-blue transition hamburger-btn" aria-controls="mobile-menu" aria-expanded="false" aria-label="Deschide meniul">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </nav>
+      <div id="mobile-menu" class="hidden md:hidden border-t border-partizan-gray">
+        <div class="px-4 py-3 space-y-2">
+          <a class="nav-link block hover:text-partizan-blue transition" href="index.html">Acasă</a>
+          <a class="nav-link block hover:text-partizan-blue transition" href="despre.html">Despre</a>
+          <a class="nav-link block hover:text-partizan-blue transition" href="lot.html">Lot</a>
+          <a class="nav-link block hover:text-partizan-blue transition" href="meciuri.html">Meciuri</a>
+          <a class="nav-link block hover:text-partizan-blue transition" href="galerie.html">Galerie</a>
+          <a class="nav-link block hover:text-partizan-blue transition" href="contact.html">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-1 py-14 bg-slate-100">
+      <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 class="text-4xl font-extrabold mb-3">Lotul echipei</h1>
+        <p class="text-slate-700 mb-10">Componența actuală a echipei de minifotbal Partizan Galați.</p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="lot-grid">
+          <article class="player-card card-soft bg-white rounded-xl p-5 text-center cursor-pointer">
+            <img src="assets/images/poza jucator unknow.jpg" alt="Bîzgan Cosmin" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover" />
+            <h2 class="font-bold">Bîzgan Cosmin</h2><p class="text-slate-600">Portar</p><p class="text-partizan-red font-semibold">#1</p>
+          </article>
+          <article class="player-card card-soft bg-white rounded-xl p-5 text-center cursor-pointer">
+            <img src="assets/images/poza jucator unknow.jpg" alt="Viorică Sebastian" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover" />
+            <h2 class="font-bold">Viorică Sebastian</h2><p class="text-slate-600">Portar</p><p class="text-partizan-red font-semibold">#99</p>
+          </article>
+          <article class="player-card card-soft bg-white rounded-xl p-5 text-center cursor-pointer">
+            <img src="assets/images/poza jucator unknow.jpg" alt="Prodan Ionuț" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover" />
+            <h2 class="font-bold">Prodan Ionuț</h2><p class="text-slate-600">Fundaș</p><p class="text-partizan-red font-semibold">#4</p>
+          </article>
+          <article class="player-card card-soft bg-white rounded-xl p-5 text-center cursor-pointer">
+            <img src="assets/images/poza jucator unknow.jpg" alt="Teodorescu Mihai" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover" />
+            <h2 class="font-bold">Teodorescu Mihai</h2><p class="text-slate-600">Fundaș</p><p class="text-partizan-red font-semibold">#5</p>
+          </article>
+          <article class="player-card card-soft bg-white rounded-xl p-5 text-center cursor-pointer">
+            <img src="assets/images/poza jucator unknow.jpg" alt="Oprișan Dragoș" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover" />
+            <h2 class="font-bold">Oprișan Dragoș</h2><p class="text-slate-600">Fundaș</p><p class="text-partizan-red font-semibold">#6</p>
+          </article>
+          <article class="player-card card-soft bg-white rounded-xl p-5 text-center cursor-pointer">
+            <img src="assets/images/poza jucator unknow.jpg" alt="Focșa Ciprian" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover" />
+            <h2 class="font-bold">Focșa Ciprian <span class="text-partizan-blue">(C)</span></h2><p class="text-slate-600">Fundaș</p><p class="text-partizan-red font-semibold">#8</p>
+          </article>
+          <article class="player-card card-soft bg-white rounded-xl p-5 text-center cursor-pointer">
+            <img src="assets/images/poza jucator unknow.jpg" alt="Oprișan Cosmin" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover" />
+            <h2 class="font-bold">Oprișan Cosmin</h2><p class="text-slate-600">Fundaș</p><p class="text-partizan-red font-semibold">#9</p>
+          </article>
+          <article class="player-card card-soft bg-white rounded-xl p-5 text-center cursor-pointer">
+            <img src="assets/images/poza jucator unknow.jpg" alt="Țopa Alin" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover" />
+            <h2 class="font-bold">Țopa Alin</h2><p class="text-slate-600">Mijlocaș</p><p class="text-partizan-red font-semibold">#7</p>
+          </article>
+          <article class="player-card card-soft bg-white rounded-xl p-5 text-center cursor-pointer">
+            <img src="assets/images/poza jucator unknow.jpg" alt="Florea Cosmin" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover" />
+            <h2 class="font-bold">Florea Cosmin</h2><p class="text-slate-600">Mijlocaș</p><p class="text-partizan-red font-semibold">#10</p>
+          </article>
+          <article class="player-card card-soft bg-white rounded-xl p-5 text-center cursor-pointer">
+            <img src="assets/images/poza jucator unknow.jpg" alt="Stratulat Alexandru" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover" />
+            <h2 class="font-bold">Stratulat Alexandru</h2><p class="text-slate-600">Mijlocaș</p><p class="text-partizan-red font-semibold">#11</p>
+          </article>
+          <article class="player-card card-soft bg-white rounded-xl p-5 text-center cursor-pointer">
+            <img src="assets/images/poza jucator unknow.jpg" alt="Budeșteanu Cristian" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover" />
+            <h2 class="font-bold">Budeșteanu Cristian</h2><p class="text-slate-600">Mijlocaș</p><p class="text-partizan-red font-semibold">#20</p>
+          </article>
+          <article class="player-card card-soft bg-white rounded-xl p-5 text-center cursor-pointer">
+            <img src="assets/images/poza jucator unknow.jpg" alt="Oniciu Valentin" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover" />
+            <h2 class="font-bold">Oniciu Valentin</h2><p class="text-slate-600">Atacant</p><p class="text-partizan-red font-semibold">#17</p>
+          </article>
+          <article class="player-card card-soft bg-white rounded-xl p-5 text-center cursor-pointer">
+            <img src="assets/images/poza jucator unknow.jpg" alt="Mațoianu Mădălin" class="w-24 h-24 rounded-full mx-auto mb-3 object-cover" />
+            <h2 class="font-bold">Mațoianu Mădălin</h2><p class="text-slate-600">Atacant</p><p class="text-partizan-red font-semibold">#50</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Popup jucător: la hover doar cât e cursorul pe card; la tap (mobil) 2 secunde -->
+      <div id="player-popup" class="fixed inset-0 z-[100] flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-200" aria-hidden="true">
+        <div id="player-popup-backdrop" class="absolute inset-0 bg-black/60" aria-hidden="true"></div>
+        <div id="player-popup-box" class="relative bg-white rounded-2xl shadow-2xl max-w-sm w-full overflow-hidden transform scale-95 transition-transform duration-200 border-4 border-partizan-blue/30">
+          <img id="player-popup-img" src="" alt="" class="w-full h-56 object-cover object-top" />
+          <div class="p-6 text-center">
+            <h3 id="player-popup-name" class="text-2xl font-bold text-slate-800 mb-1"></h3>
+            <p id="player-popup-position" class="text-slate-600 text-lg mb-2"></p>
+            <p id="player-popup-number" class="text-partizan-red font-bold text-xl">#</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer dezvoltat: linkuri, contact, social media -->
+    <footer class="bg-partizan-black text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
+          <div class="lg:col-span-1">
+            <a href="index.html" class="flex items-center gap-3 mb-4">
+              <img src="assets/images/Partizan Galati Logo.png" alt="Logo Partizan Galați" class="h-12 w-auto max-w-[120px] object-contain" />
+              <span class="font-bold text-lg">Partizan Galați</span>
+            </a>
+            <p class="text-[#A7A9AC] text-sm leading-relaxed">
+              Nu doar un club,<br>O adevarata familie.
+            </p>
+          </div>
+          <div>
+            <h3 class="font-semibold text-white mb-4 text-sm uppercase tracking-wider">Navigare</h3>
+            <ul class="space-y-2 text-sm">
+              <li><a href="index.html" class="text-[#A7A9AC] hover:text-white transition">Acasă</a></li>
+              <li><a href="despre.html" class="text-[#A7A9AC] hover:text-white transition">Despre</a></li>
+              <li><a href="lot.html" class="text-[#A7A9AC] hover:text-white transition">Lot</a></li>
+              <li><a href="meciuri.html" class="text-[#A7A9AC] hover:text-white transition">Meciuri</a></li>
+              <li><a href="galerie.html" class="text-[#A7A9AC] hover:text-white transition">Galerie</a></li>
+              <li><a href="contact.html" class="text-[#A7A9AC] hover:text-white transition">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold text-white mb-4 text-sm uppercase tracking-wider">Contact</h3>
+            <ul class="space-y-3 text-sm text-[#A7A9AC]">
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-envelope mt-0.5 text-[#1D71B8] shrink-0"></i>
+                <a href="mailto:contact@partizangalati.ro" class="hover:text-white transition">contact@partizangalati.ro</a>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-phone mt-0.5 text-[#1D71B8] shrink-0"></i>
+                <a href="tel:+40740000000" class="hover:text-white transition">+40 740 000 000</a>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-location-dot mt-0.5 text-[#1D71B8] shrink-0"></i>
+                <span>Str. Stadionului nr. 10, Galați</span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold text-white mb-4 text-sm uppercase tracking-wider">Urmărește-ne</h3>
+            <p class="text-[#A7A9AC] text-sm mb-4">Fii la curent cu meciuri, știri și momente din culise.</p>
+            <div class="flex gap-3">
+              <a href="https://www.facebook.com/people/Partizan-GL/100082318315673/" target="_blank" rel="noopener noreferrer" class="footer-social w-10 h-10 rounded-full bg-[#1D71B8] hover:bg-[#E31E24] flex items-center justify-center transition" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-[#A7A9AC]/30 mt-10 pt-6 flex flex-col items-center gap-4 text-sm text-[#A7A9AC]">
+          <div class="flex flex-col sm:flex-row justify-between items-center gap-4 w-full">
+            <p>&copy; 2026 Partizan Galați. Toate drepturile rezervate.</p>
+            <p>Echipă de minifotbal • Galați, România</p>
+          </div>
+          <div class="flex items-center gap-2 pt-2 border-t border-[#A7A9AC]/20 w-full justify-center">
+            <span class="text-[#A7A9AC]">Sponsor:</span>
+            <a href="https://reumadiagnostic.ro/" target="_blank" rel="noopener noreferrer" class="inline-block" aria-label="ReumaDiagnostic">
+              <img src="assets/sponsori/reumadiagnostic short.png" alt="ReumaDiagnostic" class="h-8 w-auto max-w-[100px] object-contain opacity-90 hover:opacity-100 transition" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script>
+      (function () {
+        const HOVER_DELAY_MS = 50;
+        const LEAVE_DELAY_MS = 500;
+        const TOUCH_POPUP_MS = 2000;
+        const popup = document.getElementById("player-popup");
+        const popupBox = document.getElementById("player-popup-box");
+        const popupBackdrop = document.getElementById("player-popup-backdrop");
+        const popupImg = document.getElementById("player-popup-img");
+        const popupName = document.getElementById("player-popup-name");
+        const popupPosition = document.getElementById("player-popup-position");
+        const popupNumber = document.getElementById("player-popup-number");
+        let hoverTimer = null;
+        let hideTimer = null;
+        let touchHideTimer = null;
+        const isTouch = "ontouchstart" in window || navigator.maxTouchPoints > 0;
+
+        function fillPopupData(card) {
+          const img = card.querySelector("img");
+          const h2 = card.querySelector("h2");
+          const paras = card.querySelectorAll("p");
+          const position = paras[0] ? paras[0].textContent : "";
+          const number = paras[1] ? paras[1].textContent : "";
+          popupImg.src = img ? img.src : "";
+          popupImg.alt = img ? img.alt : "";
+          popupName.textContent = h2 ? h2.innerText : "";
+          popupPosition.textContent = position;
+          popupNumber.textContent = number;
+        }
+
+        function showPopupHover(card) {
+          if (hideTimer) {
+            clearTimeout(hideTimer);
+            hideTimer = null;
+          }
+          if (touchHideTimer) {
+            clearTimeout(touchHideTimer);
+            touchHideTimer = null;
+          }
+          fillPopupData(card);
+          popup.classList.remove("opacity-0", "pointer-events-none");
+          popup.classList.add("opacity-100", "pointer-events-auto");
+          popupBox.classList.remove("scale-95");
+          popupBox.classList.add("scale-100");
+          popup.setAttribute("aria-hidden", "false");
+        }
+
+        function showPopupTouch(card) {
+          if (touchHideTimer) clearTimeout(touchHideTimer);
+          fillPopupData(card);
+          popup.classList.remove("opacity-0", "pointer-events-none");
+          popup.classList.add("opacity-100", "pointer-events-auto");
+          popupBox.classList.remove("scale-95");
+          popupBox.classList.add("scale-100");
+          popup.setAttribute("aria-hidden", "false");
+          touchHideTimer = setTimeout(hidePopup, TOUCH_POPUP_MS);
+        }
+
+        function hidePopup() {
+          if (hideTimer) {
+            clearTimeout(hideTimer);
+            hideTimer = null;
+          }
+          if (touchHideTimer) {
+            clearTimeout(touchHideTimer);
+            touchHideTimer = null;
+          }
+          popup.classList.add("opacity-0", "pointer-events-none");
+          popup.classList.remove("opacity-100", "pointer-events-auto");
+          popupBox.classList.add("scale-95");
+          popupBox.classList.remove("scale-100");
+          popup.setAttribute("aria-hidden", "true");
+        }
+
+        function scheduleHide() {
+          if (isTouch) return;
+          if (hideTimer) clearTimeout(hideTimer);
+          hideTimer = setTimeout(hidePopup, LEAVE_DELAY_MS);
+        }
+
+        function cancelScheduleHide() {
+          if (hideTimer) {
+            clearTimeout(hideTimer);
+            hideTimer = null;
+          }
+        }
+
+        document.querySelectorAll(".player-card").forEach(function (card) {
+          card.addEventListener("mouseenter", function () {
+            if (isTouch) return;
+            if (hoverTimer) clearTimeout(hoverTimer);
+            cancelScheduleHide();
+            hoverTimer = setTimeout(function () { showPopupHover(card); }, HOVER_DELAY_MS);
+          });
+          card.addEventListener("mouseleave", function () {
+            if (hoverTimer) {
+              clearTimeout(hoverTimer);
+              hoverTimer = null;
+            }
+            if (!isTouch) scheduleHide();
+          });
+          card.addEventListener("click", function (e) {
+            if (isTouch) {
+              e.preventDefault();
+              showPopupTouch(card);
+            }
+          });
+        });
+
+        popup.addEventListener("mouseenter", cancelScheduleHide);
+        popup.addEventListener("mouseleave", scheduleHide);
+
+        if (isTouch) {
+          popup.addEventListener("click", function () {
+            if (!popup.classList.contains("opacity-0")) hidePopup();
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>

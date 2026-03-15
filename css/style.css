@@ -1,0 +1,358 @@
+/* =========================================================
+   Partizan Galati - Tema întunecată
+   Fundal negru/gri pe toate paginile, text clar peste tot.
+   ========================================================= */
+
+:root {
+  --partizan-black: #0a0a0a;
+  --partizan-black-soft: #111111;
+  --partizan-gray-dark: #1a1a1c;
+  --partizan-gray: #2d2d30;
+  --partizan-gray-mid: #4a4a4e;
+  --partizan-gray-light: #6b6b70;
+  --partizan-gray-pale: #9ca3af;
+  --partizan-white: #f0f0f0;
+  --partizan-white-pure: #ffffff;
+  --partizan-red: #e31e24;
+  --partizan-red-hover: #ff2a30;
+  --partizan-blue: #2563eb;
+  --partizan-blue-hover: #3b82f6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--partizan-white);
+  background-color: var(--partizan-black);
+}
+
+/* ========== Fundal negru/gri peste tot ========== */
+main,
+main.flex-1,
+main.bg-white,
+main.bg-slate-100 {
+  background-color: var(--partizan-black) !important;
+}
+
+main section,
+main section.bg-white,
+main section.bg-slate-100 {
+  background-color: var(--partizan-gray-dark) !important;
+}
+
+main section:nth-of-type(even) {
+  background-color: var(--partizan-black-soft) !important;
+}
+
+/* Secțiune hero de tip negru (despre, etc.) */
+section.bg-partizan-black {
+  background-color: var(--partizan-black) !important;
+}
+
+/* ========== Texte vizibile peste tot ========== */
+body,
+main,
+main p,
+main span,
+main li,
+main label {
+  color: var(--partizan-white);
+}
+
+main h1,
+main h2,
+main h3,
+main h4 {
+  color: var(--partizan-white-pure) !important;
+}
+
+main .text-slate-700,
+main .text-slate-600,
+main .text-gray-300 {
+  color: var(--partizan-gray-pale) !important;
+}
+
+main article p,
+main .card-soft p {
+  color: var(--partizan-gray-pale) !important;
+}
+
+/* Linkuri în conținut */
+main a:not(.nav-link):not(.btn-primary) {
+  color: var(--partizan-blue);
+}
+
+main a:not(.nav-link):not(.btn-primary):hover {
+  color: var(--partizan-red);
+}
+
+/* Hero */
+.hero-bg {
+  background-image: linear-gradient(
+      rgba(10, 10, 10, 0.88),
+      rgba(10, 10, 10, 0.78)
+    ),
+    url("../assets/images/Hero%20Background%20Partizan%20Galati.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-bg h1,
+.hero-bg p,
+.hero-bg .text-gray-200 {
+  color: var(--partizan-white-pure) !important;
+}
+
+.hero-bg .text-gray-200 {
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* ========== Carduri – fundal gri, text clar ========== */
+.card-soft,
+main .bg-white.card-soft,
+main .rounded-xl.bg-white,
+main .bg-slate-50,
+main .card-soft.rounded-xl.bg-slate-50 {
+  background-color: var(--partizan-gray) !important;
+  border: 1px solid var(--partizan-gray-mid);
+  color: var(--partizan-white);
+}
+
+.card-soft h2,
+.card-soft h3,
+.card-soft .font-bold,
+.card-soft .font-semibold {
+  color: var(--partizan-white-pure) !important;
+}
+
+.card-soft p,
+.card-soft .text-slate-600,
+.card-soft .text-slate-700 {
+  color: var(--partizan-gray-pale) !important;
+}
+
+/* ========== Tabele (Meciuri) – fundal negru/gri, text clar ========== */
+main table,
+main .bg-white {
+  background-color: var(--partizan-gray) !important;
+}
+
+main table thead {
+  background-color: var(--partizan-black) !important;
+  color: var(--partizan-white-pure) !important;
+}
+
+main table thead th {
+  color: var(--partizan-white-pure) !important;
+}
+
+main table tbody td {
+  color: var(--partizan-gray-pale) !important;
+  border-color: var(--partizan-gray-mid) !important;
+}
+
+main table tbody tr {
+  border-bottom: 1px solid var(--partizan-gray-mid);
+}
+
+main .divide-y.divide-slate-200 > * {
+  border-color: var(--partizan-gray-mid) !important;
+}
+
+main table tbody .font-semibold {
+  color: var(--partizan-white) !important;
+}
+
+/* Thead albastru pe tabelul "Rezultate" */
+main table thead.bg-partizan-blue {
+  background-color: var(--partizan-blue) !important;
+  color: var(--partizan-white-pure) !important;
+}
+
+/* ========== Formulare (Contact) – câmpuri vizibile ========== */
+main input,
+main textarea {
+  background-color: var(--partizan-gray-dark) !important;
+  border: 1px solid var(--partizan-gray-mid) !important;
+  color: var(--partizan-white) !important;
+}
+
+main input::placeholder,
+main textarea::placeholder {
+  color: var(--partizan-gray-light);
+}
+
+main input:focus,
+main textarea:focus {
+  outline: none !important;
+  border-color: var(--partizan-blue) !important;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.3);
+}
+
+main label {
+  color: var(--partizan-white) !important;
+}
+
+/* ========== Utilitare culori brand ========== */
+.bg-partizan-black {
+  background-color: var(--partizan-black) !important;
+}
+
+.bg-partizan-blue {
+  background-color: var(--partizan-blue);
+}
+
+.bg-partizan-red {
+  background-color: var(--partizan-red);
+}
+
+.text-partizan-blue {
+  color: var(--partizan-blue) !important;
+}
+
+.text-partizan-red {
+  color: var(--partizan-red) !important;
+}
+
+.border-partizan-gray {
+  border-color: var(--partizan-gray-mid);
+}
+
+/* ========== Buton primar ========== */
+.btn-primary {
+  background-color: var(--partizan-blue);
+  color: var(--partizan-white-pure);
+  transition: background-color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--partizan-red);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 20px rgba(227, 30, 36, 0.4);
+}
+
+/* ========== Navigație ========== */
+.nav-link:hover {
+  color: var(--partizan-blue) !important;
+}
+
+.nav-link.active {
+  color: var(--partizan-blue) !important;
+  font-weight: 700;
+}
+
+header .text-white,
+header span {
+  color: var(--partizan-white-pure) !important;
+}
+
+/* ========== Carduri – umbră și hover ========== */
+.card-soft {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-soft:hover {
+  border-color: var(--partizan-gray-mid);
+  box-shadow: 0 8px 28px rgba(37, 99, 235, 0.15);
+}
+
+/* Linkuri „Află mai multe” etc. */
+a.text-partizan-blue:hover,
+main a:hover .text-partizan-blue {
+  color: var(--partizan-red) !important;
+}
+
+/* Sponsor cards */
+.sponsor-card:hover {
+  border-color: var(--partizan-blue) !important;
+  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.2);
+}
+
+.sponsor-card:nth-child(odd):hover {
+  border-color: var(--partizan-red) !important;
+  box-shadow: 0 4px 20px rgba(227, 30, 36, 0.2);
+}
+
+/* Map placeholder */
+.map-placeholder {
+  min-height: 250px;
+  border: 2px dashed var(--partizan-gray-mid);
+  background: linear-gradient(135deg, var(--partizan-gray-dark), var(--partizan-gray));
+  color: var(--partizan-gray-pale) !important;
+}
+
+/* ========== Footer ========== */
+footer.bg-partizan-black {
+  border-top: 1px solid var(--partizan-gray);
+  background-color: var(--partizan-black) !important;
+}
+
+footer,
+footer .text-white {
+  color: var(--partizan-gray-pale) !important;
+}
+
+/* ========== Diverse ========== */
+#mobile-menu {
+  border-top-color: var(--partizan-gray-mid);
+  background-color: var(--partizan-black);
+}
+
+/* Caseta albă a iconiței meniului – fundal alb, linii negre */
+#mobile-menu-button {
+  background-color: #ffffff !important;
+  color: var(--partizan-black) !important;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#mobile-menu-button .hamburger-line {
+  background-color: #0a0a0a !important;
+}
+
+#mobile-menu-button:hover {
+  background-color: var(--partizan-blue) !important;
+  color: var(--partizan-white-pure) !important;
+  border-color: var(--partizan-blue);
+}
+
+#mobile-menu-button:hover .hamburger-line {
+  background-color: #ffffff !important;
+}
+
+/* Cele 3 linii ale iconiței hamburger */
+.hamburger-line {
+  display: block;
+  width: 22px;
+  height: 2.5px;
+  background-color: currentColor;
+  border-radius: 1px;
+}
+
+.border-t.border-partizan-gray {
+  border-color: var(--partizan-gray) !important;
+}
+
+/* Listă contact – text vizibil */
+main ul.space-y-3.text-slate-700 li {
+  color: var(--partizan-gray-pale) !important;
+}
+
+/* Focus accesibilitate */
+a:focus-visible {
+  outline: 2px solid var(--partizan-red);
+  outline-offset: 2px;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--partizan-blue);
+  outline-offset: 2px;
+}
+
+/* Logo – fundal discret pentru contrast */
+header img.object-cover.bg-white {
+  background-color: var(--partizan-gray) !important;
+}
